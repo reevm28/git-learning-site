@@ -121,7 +121,7 @@
 
 </div>
         </div>
-        
+
         <div class="section" id="create-clone">
             <h2>Creating and Cloning Repository</h2>
             <div class="code-block">
@@ -134,6 +134,49 @@
         # Navigate to cloned repository
         cd REPO-NAME</div>
         </div>
+
+        <div class="section" id="basics">
+            <h2>Git Basics</h2>
+            <div class="code-block">
+        # Check status of your repository
+        git status
+        
+        # Add files to staging area
+        git add .
+        
+        # Commit changes
+        git commit -m "Your message"
+        
+        # Pull changes from remote
+        git pull origin main
+        
+        # Push changes to remote
+        git push origin main
+            </div>
+        </div>
+        
+        <div class="section" id="branching">
+            <h2>Branching</h2>
+            <div class="code-block">
+        # Create new branch
+        git branch feature-name
+        
+        # Switch to branch
+        git checkout feature-name
+        
+        # Create and switch (shortcut)
+        git checkout -b new-feature
+        
+        # Merge branch to main
+        git checkout main
+        git merge feature-name
+        
+        # Delete branch after merging
+        git branch -d feature-name
+            </div>
+        </div>
+
+
 
         <div class="section" id="basics">
             <h2>Git Basics</h2>
