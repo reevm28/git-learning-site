@@ -175,7 +175,59 @@
         git branch -d feature-name
             </div>
         </div>
-
+        <div class="section" id="remote-repos">
+            <h2>Working with Remote Repositories</h2>
+            <div class="code-block">
+        # Add a remote repository
+        git remote add origin https://github.com/USERNAME/REPO.git
+        
+        # View remote repositories
+        git remote -v
+        
+        # Fetch changes from remote
+        git fetch origin
+        
+        # Pull changes from remote
+        git pull origin main
+        
+        # Push changes to remote
+        git push origin main
+        
+        # Remove a remote
+        git remote remove origin
+            </div>
+        </div>
+        
+        <div class="section" id="pull-requests">
+            <h2>Pull Requests and Code Reviews</h2>
+            <div class="code-block">
+        # Create a new branch for your feature
+        git checkout -b new-feature
+        
+        # Make changes and commit
+        git add .
+        git commit -m "Add new feature"
+        
+        # Push the branch to GitHub
+        git push origin new-feature
+        
+        # On GitHub:
+        # 1. Go to your repository
+        # 2. Click "Pull requests"
+        # 3. Click "New pull request"
+        # 4. Select your branch
+        # 5. Click "Create pull request"
+        # 6. Add description and create
+        
+        # Reviewing in VS Code:
+        # 1. Install GitHub Pull Requests extension
+        # 2. View pull request in VS Code
+        # 3. Add comments and suggestions
+        # 4. Approve or request changes
+        
+        # Merge pull request on GitHub
+            </div>
+        </div>
 
 
         <div class="section" id="basics">
