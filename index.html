@@ -107,6 +107,20 @@
             font-family: monospace;
             white-space: pre-wrap;
         }
+
+        button {
+            background-color: #2d333b;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        button:hover {
+            background-color: #444d57;
+        }
     </style>
 </head>
 <body>
@@ -269,8 +283,18 @@ git push origin new-feature
 
             <div class="section" id="case-study">
                 <h2>Case Study: Collaborative Development</h2>
-                <p>In this case study, we'll explore how a team of developers used Git to manage a complex web application project...</p>
-                <!-- Add more details about your case study here -->
+                <p>Click to read about how a team used Git for a complex web app project.</p>
+                <button id="read-more-btn">Read More</button>
+                <div id="full-case-study" style="display: none;">
+                    <h3>Project Overview</h3>
+                    <p>A team of 5 developers worked on a complex e-commerce platform...</p>
+                    <h3>Git Workflow</h3>
+                    <p>The team adopted a feature branch workflow...</p>
+                    <h3>Challenges and Solutions</h3>
+                    <p>One major challenge was managing merge conflicts...</p>
+                    <h3>Lessons Learned</h3>
+                    <p>Through this project, the team learned the importance of...</p>
+                </div>
             </div>
         </div>
     </div>
@@ -298,6 +322,20 @@ git push origin new-feature
 
         sections.forEach(section => {
             observer.observe(section);
+        });
+
+        // Case study interaction
+        const readMoreBtn = document.getElementById('read-more-btn');
+        const fullCaseStudy = document.getElementById('full-case-study');
+
+        readMoreBtn.addEventListener('click', function() {
+            if (fullCaseStudy.style.display === 'none') {
+                fullCaseStudy.style.display = 'block';
+                readMoreBtn.textContent = 'Read Less';
+            } else {
+                fullCaseStudy.style.display = 'none';
+                readMoreBtn.textContent = 'Read More';
+            }
         });
     </script>
 </body>
