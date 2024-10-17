@@ -282,22 +282,50 @@ git push origin new-feature
             </div>
 
             <div class="section" id="case-study">
-                <h2>Case Study: Collaborative Development</h2>
+                <h2>Case Study: Collaborative Development of an E-commerce Platform</h2>
                 <p>Click to read about how a team used Git for a complex web app project.</p>
                 <button id="read-more-btn">Read More</button>
                 <div id="full-case-study" style="display: none;">
                     <h3>Project Overview</h3>
-                    <p>A team of 5 developers worked on a complex e-commerce platform...</p>
+                    <p>A team of 5 developers collaborated on building a complex e-commerce platform over 6 months. The project involved creating a responsive web application with a React frontend, Node.js backend, and MongoDB database.</p>
+                    
                     <h3>Git Workflow</h3>
-                    <p>The team adopted a feature branch workflow...</p>
+                    <p>The team adopted a feature branch workflow:</p>
+                    <ul>
+                        <li>Main branch for production-ready code</li>
+                        <li>Develop branch for ongoing development</li>
+                        <li>Feature branches for individual features</li>
+                        <li>Release branches for version preparation</li>
+                        <li>Hotfix branches for urgent production fixes</li>
+                    </ul>
+                    
                     <h3>Challenges and Solutions</h3>
-                    <p>One major challenge was managing merge conflicts...</p>
+                    <p>1. Merge Conflicts: As the project grew, merge conflicts became more frequent. The team addressed this by:</p>
+                    <ul>
+                        <li>Implementing a code review process before merging</li>
+                        <li>Using Git rebase to maintain a cleaner history</li>
+                        <li>Regularly syncing feature branches with the develop branch</li>
+                    </ul>
+                    <p>2. Large File Management: The project included large media files, which slowed down Git operations. The solution was:</p>
+                    <ul>
+                        <li>Implementing Git LFS (Large File Storage) for efficient handling of large files</li>
+                        <li>Setting up a .gitignore file to exclude unnecessary large files</li>
+                    </ul>
+                    
                     <h3>Lessons Learned</h3>
-                    <p>Through this project, the team learned the importance of...</p>
+                    <p>Through this project, the team learned the importance of:</p>
+                    <ul>
+                        <li>Clear communication about branch purposes and merge strategies</li>
+                        <li>Regular commits with meaningful commit messages</li>
+                        <li>Utilizing Git hooks for automated testing before pushes</li>
+                        <li>Proper documentation of Git workflows for onboarding new team members</li>
+                        <li>Leveraging Git's advanced features like bisect for debugging</li>
+                    </ul>
+                    
+                    <h3>Outcome</h3>
+                    <p>The structured Git workflow significantly improved the team's productivity and code quality. It allowed for parallel development of features, easier tracking of changes, and smoother releases. The team successfully launched the e-commerce platform on schedule, with a robust and maintainable codebase.</p>
                 </div>
             </div>
-        </div>
-    </div>
 
     <script>
         // Smooth scrolling for sidebar links
