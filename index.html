@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Git Learning Hub</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+        }
+
+        body {
+            line-height: 1.6;
+            color: #333;
+        }
+
+        nav {
+            background: #2d333b;
+            padding: 1rem;
+            position: fixed;
+            width: 100%;
+            top: 0;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+        }
+
+        .hero {
+            background: linear-gradient(45deg, #2d333b, #22272e);
+            color: white;
+            padding: 8rem 2rem 4rem;
+            text-align: center;
+        }
+
+        .hero h1 {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+        }
+
+        .content {
+            max-width: 1200px;
+            margin: 2rem auto;
+            padding: 0 2rem;
+        }
+
+        .section {
+            margin: 3rem 0;
+            padding: 2rem;
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+
+        .section h2 {
+            color: #2d333b;
+            margin-bottom: 1rem;
+        }
+
+        code {
+            background: #f6f8fa;
+            padding: 0.2rem 0.4rem;
+            border-radius: 3px;
+            font-family: monospace;
+        }
+
+        .code-block {
+            background: #f6f8fa;
+            padding: 1rem;
+            border-radius: 5px;
+            margin: 1rem 0;
+            font-family: monospace;
+            white-space: pre-wrap;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="#setup">Setup</a></li>
+            <li><a href="#basics">Basics</a></li>
+            <li><a href="#branching">Branching</a></li>
+            <li><a href="#remote">Remote</a></li>
+        </ul>
+    </nav>
+
+    <div class="hero">
+        <h1>Git Learning Hub</h1>
+        <p>Master version control with Git and GitHub</p>
+    </div>
+
+    <div class="content">
+        <div class="section" id="setup">
+            <h2>Git Setup</h2>
+            <div class="code-block">
+# Check Git version
+git --version
+
+# Configure Git
+git config --global user.name "Your Name"
+git config --global user.email "email@example.com"</div>
+        </div>
+
+        <div class="section" id="basics">
+            <h2>Git Basics</h2>
+            <div class="code-block">
+# Initialize repository
+git init
+
+# Add files
+git add .
+
+# Commit changes
+git commit -m "Your message"</div>
+        </div>
+
+        <div class="section" id="branching">
+            <h2>Branching</h2>
+            <div class="code-block">
+# Create branch
+git branch feature-name
+
+# Switch branch
+git checkout feature-name
+
+# Create and switch (shortcut)
+git checkout -b feature-name</div>
+        </div>
+
+        <div class="section" id="remote">
+            <h2>Working with Remote</h2>
+            <div class="code-block">
+# Add remote
+git remote add origin [URL]
+
+# Push changes
+git push -u origin main
+
+# Pull changes
+git pull origin main</div>
+        </div>
+    </div>
+</body>
+</html>
